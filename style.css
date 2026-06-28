@@ -332,13 +332,6 @@ section h2 {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800');
 }
 
-.portfolio-card h3 {
-    font-size: 26px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
 .portfolio-info {
     background-color: #0d0d0d;
     padding: 40px;
@@ -469,7 +462,6 @@ footer p {
     transform: translateY(0);
 }
 
-/* HAMBURGER MENU */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -510,6 +502,7 @@ footer p {
         height: 100vh;
         width: 250px;
         background-color: #0d0d0d;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -517,7 +510,6 @@ footer p {
         transition: right 0.3s ease;
         border-left: 1px solid #1a1a1a;
         z-index: 1000;
-        display: flex;
     }
 
     nav.open {
@@ -527,6 +519,7 @@ footer p {
     nav a {
         margin-left: 0;
         font-size: 18px;
+        display: block;
     }
 
     header {
