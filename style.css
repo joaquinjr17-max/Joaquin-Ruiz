@@ -493,7 +493,6 @@ footer p {
 .hamburger.open span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
-
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -548,6 +547,11 @@ footer p {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .infinity {
+        font-family: 'Georgia', serif;
+        font-size: 48px;
     }
 
     .skills-grid {
