@@ -58,17 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('open');
-        nav.classList.toggle('open');
-    });
-
-    // Close menu when link is clicked
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('open');
-            nav.classList.remove('open');
+    if (hamburger && nav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('open');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
         });
-    });
+
+        document.querySelectorAll('#nav a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('open');
+                nav.style.display = 'none';
+            });
+        });
+    }
 
 });
