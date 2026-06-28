@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-/* HEADER */
 header {
     position: fixed;
     top: 0;
@@ -55,7 +54,6 @@ nav a:hover {
     color: #ffffff;
 }
 
-/* HERO */
 #hero {
     min-height: 100vh;
     display: flex;
@@ -73,7 +71,7 @@ nav a:hover {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(74, 158, 218, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(176, 74, 237, 0.08) 0%, transparent 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -126,8 +124,8 @@ nav a:hover {
 }
 
 .btn-primary {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #b04aed;
+    color: #ffffff;
     padding: 16px 35px;
     text-decoration: none;
     font-weight: 700;
@@ -138,8 +136,8 @@ nav a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #b04aed;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .btn-secondary {
@@ -161,7 +159,6 @@ nav a:hover {
     color: #000000;
 }
 
-/* SECTIONS */
 section {
     padding: 120px 60px;
 }
@@ -189,7 +186,6 @@ section h2 {
     line-height: 1.2;
 }
 
-/* ABOUT */
 #about {
     background-color: #000000;
     border-top: 1px solid #111111;
@@ -238,7 +234,6 @@ section h2 {
     margin: 0;
 }
 
-/* SKILLS */
 #skills {
     background-color: #050505;
     border-top: 1px solid #111111;
@@ -291,7 +286,6 @@ section h2 {
     line-height: 1.6;
 }
 
-/* WORK */
 #work {
     background-color: #000000;
     border-top: 1px solid #111111;
@@ -338,6 +332,13 @@ section h2 {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800');
 }
 
+.portfolio-card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
 .portfolio-info {
     background-color: #0d0d0d;
     padding: 40px;
@@ -373,7 +374,6 @@ section h2 {
     color: #ffffff;
 }
 
-/* CONTACT */
 #contact {
     background-color: #050505;
     border-top: 1px solid #111111;
@@ -425,8 +425,8 @@ section h2 {
 }
 
 .form-button {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #b04aed;
+    color: #ffffff;
     padding: 18px 35px;
     border: none;
     border-radius: 50px;
@@ -440,11 +440,10 @@ section h2 {
 }
 
 .form-button:hover {
-    background-color: #b04aed;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* FOOTER */
 footer {
     background-color: #000000;
     border-top: 1px solid #111111;
@@ -459,7 +458,6 @@ footer p {
     color: #444444;
 }
 
-/* ANIMATIONS */
 .animate {
     opacity: 0;
     transform: translateY(40px);
@@ -471,52 +469,6 @@ footer p {
     transform: translateY(0);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    header {
-        padding: 20px 25px;
-    }
-    header.scrolled {
-        padding: 15px 25px;
-    }
-    nav a {
-        margin-left: 15px;
-        font-size: 12px;
-    }
-    #hero h2 {
-        font-size: 52px;
-    }
-    section {
-        padding: 80px 25px;
-    }
-    section h2 {
-        font-size: 32px;
-    }
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    .portfolio-card {
-        grid-template-columns: 1fr;
-    }
-    .portfolio-image {
-        height: 200px;
-    }
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    footer {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        padding: 30px 25px;
-    }
-    body {
-        overflow-x: hidden;
-    }   
-}
 /* HAMBURGER MENU */
 .hamburger {
     display: none;
@@ -565,6 +517,7 @@ footer p {
         transition: right 0.3s ease;
         border-left: 1px solid #1a1a1a;
         z-index: 1000;
+        display: flex;
     }
 
     nav.open {
@@ -574,5 +527,56 @@ footer p {
     nav a {
         margin-left: 0;
         font-size: 18px;
+    }
+
+    header {
+        padding: 20px 25px;
+    }
+
+    header.scrolled {
+        padding: 15px 25px;
+    }
+
+    #hero h2 {
+        font-size: 52px;
+    }
+
+    section {
+        padding: 80px 25px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-card {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-image {
+        height: 200px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 30px 25px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
