@@ -213,17 +213,13 @@ section h2 {
     text-align: center;
     transition: border-color 0.3s ease;
 }
-.infinity{
-    font-family:'Georgia',serif;
-    font-size: 48px;
-    color: #b04aed;
-}
+
 .stat:hover {
     border-color: #b04aed;
 }
 
 .stat h3 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Georgia', serif;
     font-size: 48px;
     color: #b04aed;
     letter-spacing: 2px;
@@ -493,6 +489,7 @@ footer p {
 .hamburger.open span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -547,11 +544,6 @@ footer p {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .infinity {
-        font-family: 'Georgia', serif;
-        font-size: 48px;
     }
 
     .skills-grid {
