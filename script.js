@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Hamburger menu
     const hamburger = document.getElementById('hamburger');
-    const nav = document.querySelector('nav');
+    const nav = document.getElementById('nav');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('open');
