@@ -213,7 +213,11 @@ section h2 {
     text-align: center;
     transition: border-color 0.3s ease;
 }
-
+.infinity{
+    font-family:'Georgia',serif;
+    font-size: 48px;
+    color: #b04aed;
+}
 .stat:hover {
     border-color: #b04aed;
 }
