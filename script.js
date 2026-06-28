@@ -53,4 +53,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     type();
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        nav.classList.toggle('open');
+    });
+
+    // Close menu when link is clicked
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            nav.classList.remove('open');
+        });
+    });
+
 });
