@@ -123,24 +123,22 @@
             </div>
         </div>
     </section>
-
     <section id="contact" class="animate">
-        <div class="section-inner">
-            <p class="section-tag">Contact</p>
-            <h2>Let's work together.</h2>
-            <p>Have a project in mind or just want to connect? I'd love to hear from you.</p>
-            <div class="contact-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Your Name" class="form-input">
-                    <input type="email" placeholder="Your Email" class="form-input">
-                </div>
-                <input type="text" placeholder="Subject" class="form-input">
-                <textarea placeholder="Tell me about your project..." class="form-input" rows="5" style="resize: none;"></textarea>
-                <button type="submit" class="form-button">Send Message ↗</button>
+    <div class="section-inner">
+        <p class="section-tag">Contact</p>
+        <h2>Let's work together.</h2>
+        <p class="contact-email">Or reach me directly at <a href="mailto:joaquinruizmedia@gmail.com">joaquinruizmedia@gmail.com</a></p>
+        <form class="contact-form" action="https://formspree.io/f/mdarwokv" method="POST">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name" class="form-input">
+                <input type="email" name="email" placeholder="Your Email" class="form-input">
             </div>
-        </div>
-    </section>
-
+            <input type="text" name="subject" placeholder="Subject" class="form-input">
+            <textarea name="message" placeholder="Tell me about your project..." class="form-input" rows="5" style="resize: none;"></textarea>
+            <button type="submit" class="form-button">Send Message ↗</button>
+        </form>
+    </div>
+</section>
     <footer>
         <p>Joaquin Ruiz © 2026</p>
         <p>Built by hand in Truckee, CA</p>

@@ -572,4 +572,20 @@ footer p {
     body {
         overflow-x: hidden;
     }
+   .contact-email {
+    font-size: 15px;
+    color: #888888;
+    margin-bottom: 40px;
+}
+
+.contact-email a {
+    color: #b04aed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-email a:hover {
+    color: #ffffff;
+    transition: color 0.3s ease;
+} 
 }
